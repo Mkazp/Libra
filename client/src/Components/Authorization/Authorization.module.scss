@@ -1,0 +1,145 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .blockItemTitle,
+  .blockItemBtn,
+  .formTitle,
+  .formInput,
+  .formBtn,
+  .formForgot {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+    position: relative;
+    margin: 5% auto 10% auto; /* Используем margin: 10% auto 0 auto; для центрирования */
+  }
+  
+  .block {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Центрируем .block */
+  }
+  
+  .blockItem {
+    text-align: center;
+    width: 50%;
+  }
+  
+  .blockItemTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .blockItemBtn {
+    border: 5px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .blockItemBtn:hover {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .signinBtn, .signupBtn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 50px;
+  }
+  
+  .formBox {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto; /* Центрируем .formBox */
+  }
+  
+  .formBox.active {
+    left: 50%;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+    position: absolute;
+    transition: 0.5s;
+  }
+  
+  .formSignin {
+    left: 0;
+    transition-delay: 0.25s;
+  }
+  
+  .formSignup {
+    left: 100%;
+    transition-delay: 0s;
+  }
+  
+  .formBox.active .formSignin {
+    left: -100%;
+    transition-delay: 0s;
+  }
+  
+  .formBox.active .formSignup {
+    left: 0;
+    transition-delay: 0.25s;
+  }
+  
+  .formTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+  }
+  
+  .formBtn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 50px;
+  }
+  
+  .formForgot {
+    color: #333;
+  }
+  
+  .formBtnSignup {
+    background-color: #f43648;
+  }

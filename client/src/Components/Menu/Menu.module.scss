@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap";
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  color: #454545;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  font-size: 2em;
+  &.active {
+    color: #ffc107;
+  }
+}
+
+.navLink {
+  color: #454545;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  font-size: 2em;
+  align-self: center;
+  &.active {
+    color: #ffc107;
+  }
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.authLink {
+  color: #454545;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  font-size: 2em;
+  align-self: center;
+  &.active {
+    color: #ffc107;
+  }
+  &:hover {
+    color: #ccc;
+  }
+}
